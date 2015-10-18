@@ -1,6 +1,8 @@
 package com.gamebase.main;
 
 import java.awt.Graphics;
+import java.awt.Point;
+import java.util.LinkedList;
 
 public abstract class GameObject {
 
@@ -13,6 +15,8 @@ public abstract class GameObject {
 		this.y = y;
 		this.id = id;
 	}
+	
+	public abstract void tickSec(LinkedList<Point>p );
 	public abstract void tick();
 	public abstract void render(Graphics g);
 	public int getX() {

@@ -8,6 +8,7 @@ public class MouseInput implements MouseListener{
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
 		// TODO Auto-generated method stub
+		System.out.println("point of click"+arg0.getPoint());
 	//	DrawEffect de=new DrawEffect(arg0.getPoint());
 	}
 
